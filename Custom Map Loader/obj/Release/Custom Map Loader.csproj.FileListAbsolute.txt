@@ -1,0 +1,14 @@
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\bin\Release\Custom Map Loader.exe.config
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\bin\Release\Custom Map Loader.exe
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\bin\Release\Custom Map Loader.pdb
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom Map Loader.csproj.AssemblyReference.cache
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom_Map_Loader.CML.resources
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom_Map_Loader.CML2.resources
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom_Map_Loader.Properties.Resources.resources
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom Map Loader.csproj.GenerateResource.cache
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom Map Loader.csproj.CoreCompileInputs.cache
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom Map Loader.csproj.CopyComplete
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom Map Loader.exe
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom Map Loader.pdb
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\bin\Release\System.Diagnostics.DiagnosticSource.xml
+C:\Users\KósaMárkMilán\source\repos\Custom Map Loader\Custom Map Loader\obj\Release\Custom Map Loader.csproj.Fody.CopyLocal.cache

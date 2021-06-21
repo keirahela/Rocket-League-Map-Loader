@@ -2,9 +2,9 @@
 
 ### if you have any issues, just dm ``keirahela#0001`` on discord
 
-# How to download Rocket League Workshop Maps
 
 
+# How to use
 
 > 1. Head over to [Rocket League’s Steam Workshop](https://steamcommunity.com/workshop/browse/?appid=252950&searchtext=Rocket+League&childpublishedfileid=0&browsesort=textsearch&section=about) and find a map you want to download.
 

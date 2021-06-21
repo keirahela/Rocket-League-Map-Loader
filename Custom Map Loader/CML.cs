@@ -36,7 +36,7 @@ namespace Custom_Map_Loader
         private void Form1_Load(object sender, EventArgs e)
         {
             ofd = new OpenFileDialog();
-            ofd.Filter = "UPK files|*.upk";
+            ofd.Filter = "upk files (*.upk)|*.upk|udk files (*.udk)|*.udk";
 
         }
 
@@ -89,35 +89,39 @@ namespace Custom_Map_Loader
         {
             if (ofd.ShowDialog() == DialogResult.OK)
             {
-                bool underpass = File.Exists(Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
+                var ext = System.IO.Path.GetExtension(ofd.FileName);
+                if (ext == ".upk" || ext == ".udk")
+                {
+                    bool underpass = File.Exists(Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
                 bool underpass2 = File.Exists(Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P_BACKUP.upk");
                 string sFileName = ofd.FileName;
-                if (underpass)
-                {
-                    if (!underpass2)
+                    if (underpass)
                     {
-                        File.Move(Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk", Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P_BACKUP.upk");
-                        File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
-                        MessageBox.Show("Success! Now start Underpass Map in freeplay.");
+                        if (!underpass2)
+                        {
+                            File.Move(Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk", Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P_BACKUP.upk");
+                            File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
+                            MessageBox.Show("Success! Now start Underpass Map in freeplay.");
+                        }
+                        else
+                        {
+                            File.Delete(Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
+                            File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
+                            MessageBox.Show("Success! Now start Underpass Map in freeplay.");
+                        }
                     }
-                    else
+                    else if (!underpass)
                     {
-                        File.Delete(Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
-                        File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
-                        MessageBox.Show("Success! Now start Underpass Map in freeplay.");
-                    }
-                }
-                else if (!underpass)
-                {
-                    if (underpass2)
-                    {
-                        File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
-                        MessageBox.Show("Success! Now start Underpass Map in freeplay.");
-                    }
-                    else
-                    {
-                        File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
-                        MessageBox.Show("Success! Now start Underpass Map in freeplay.");
+                        if (underpass2)
+                        {
+                            File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
+                            MessageBox.Show("Success! Now start Underpass Map in freeplay.");
+                        }
+                        else
+                        {
+                            File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
+                            MessageBox.Show("Success! Now start Underpass Map in freeplay.");
+                        }
                     }
                 }
             }

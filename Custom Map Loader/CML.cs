@@ -98,10 +98,13 @@ namespace Custom_Map_Loader
                     {
                         File.Move(Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk", Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P_BACKUP.upk");
                         File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
-                    } else
+                        MessageBox.Show("Success! Now start Underpass Map in freeplay.");
+                    }
+                    else
                     {
                         File.Delete(Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
                         File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
+                        MessageBox.Show("Success! Now start Underpass Map in freeplay.");
                     }
                 }
                 else if (!underpass)
@@ -109,9 +112,12 @@ namespace Custom_Map_Loader
                     if (underpass2)
                     {
                         File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
-                    } else
+                        MessageBox.Show("Success! Now start Underpass Map in freeplay.");
+                    }
+                    else
                     {
                         File.Copy(sFileName, Properties.Settings.Default.under4 + @"\TAGame\CookedPCConsole\Labs_Underpass_P.upk");
+                        MessageBox.Show("Success! Now start Underpass Map in freeplay.");
                     }
                 }
             }

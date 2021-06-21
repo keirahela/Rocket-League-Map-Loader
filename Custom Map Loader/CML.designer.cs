@@ -183,7 +183,7 @@ namespace Custom_Map_Loader
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(490, 296);
+            this.label2.Location = new System.Drawing.Point(479, 294);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(162, 18);
             this.label2.TabIndex = 12;
@@ -213,11 +213,11 @@ namespace Custom_Map_Loader
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Verdana", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label5.Location = new System.Drawing.Point(322, 111);
+            this.label5.Location = new System.Drawing.Point(250, 104);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(497, 32);
+            this.label5.Size = new System.Drawing.Size(646, 32);
             this.label5.TabIndex = 15;
-            this.label5.Text = "ONLY .UPK FILES ARE SUPPORTED!";
+            this.label5.Text = "ONLY .UPK AND .UDK FILES ARE SUPPORTED!";
             // 
             // CML
             // 
